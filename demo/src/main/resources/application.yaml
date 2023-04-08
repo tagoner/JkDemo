@@ -1,0 +1,15 @@
+server:
+  port: 8090
+
+logging:
+  config: classpath:spring/logback-context.xml  
+
+spring:
+  config:
+    import:
+    - classpath:properties/common.yml
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: jdbc:mariadb:localhost:3306
+    username: file
+    password: tagon
